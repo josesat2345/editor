@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.lexend-deca-<uniquifier> {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+body {
+    background: linear-gradient(90deg, rgb(26, 32, 64) 0%, rgba(76, 41, 243, 1) 38%, rgba(56, 161, 255, 1) 100%);
+    margin: 0; /* Asegura que no haya margen */
+    padding: 0; /* Asegura que no haya relleno */
+    min-height: 100vh; /* Para que el body ocupe toda la altura de la ventana */
+}
+
+.formPresupuesto {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 50px auto;
+    width: 60vw;
+    height: 74vh;
+    border-radius: 5px;
+    box-shadow: 8px 8px 40px 0px rgba(0, 0, 0, 0.50);
+}
+
+.infoForm {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    background-color: #0056b3;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px 0 0 5px;
+
+    h1 {
+        font-weight: 500;
+        font-size: 200%;
+        color: rgb(255, 255, 255);
+    }
+
+    h2 {
+        font-weight: 200;
+        font-size: small;
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+.infoUno {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.infoDos {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 150px;
+
+    h2 {
+        margin-top: 20px;
+    }
+}
+
+.logo {
+    width: 15%;
+}
+
+.container {
+    display: flex;
+    width: 65%;
+    height: 100%;
+    background-color: antiquewhite;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+
+}
+
+.grupo {
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    input {
+        width: 100%;
+    }
+}
+
+.grupo2 {
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+
+    input {
+        width: 100%;
+    }
+}
+
+.form-group1 {
+    width: 55%;
+    height: 100%;
+    padding: 0 15px 10px 15px;
+
+    select {
+        width: 100%;
+    }
+}
+
+.form-group2 {
+    width: 45%;
+    padding: 0 15px 10px 15px;
+
+    select {
+        width: 100%;
+    }
+}
+
+.form-group3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 10px 15px;
+    margin-bottom: 15px;
+
+    textarea,
+    input {
+        width: 100%;
+    }
+}
+
+label {
+    font-size: 75%;
+    font-weight: 500;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 75%;
+}
+
+select{
+    font-size: 70%;
+}
+
+.container{
+    input{
+        font-size: 70%;
+
+    }
+}
+
+.lista {
+    background-color: #e1f3fe;
+}
+
+button {
+    width: 70%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#successMessage {
+    margin-top: 20px;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.factura {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.factura input {
+    width: 4%;
+    margin-left: 10px;
+    height: 100%;
+}
+
+#successMessage {
+    display: none;
+    /* Esto oculta la alerta por defecto */
+    margin-top: 20px;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(26, 32, 64) 0%, rgba(76, 41, 243, 1) 38%, rgba(56, 161, 255, 1) 100%);
+}
+
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+    position: absolute;
+    /* Asegura que la alerta esté posicionada por encima del fondo */
+    top: 20%;
+    /* Centra verticalmente */
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translateX(-50%); /* Centra horizontalmente */
+    /* Centra el elemento */
+    z-index: 1000;
+    /* Asegura que la alerta esté en la parte superior */
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Cambia la opacidad del fondo blanco */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+    img {
+        width: 5%;
+        text-align: center;
+    }
+}

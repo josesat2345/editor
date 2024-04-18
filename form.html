@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">  
+  <link rel="shortcut icon" href="/logos/logo-je.png" type="image/x-icon">
+  <title>Presupuesto</title>
+  <link rel="stylesheet" href="stylo.css">
+</head>
+
+<body class="bodyForm">
+  <div class="formPresupuesto">
+    <div class="infoForm">
+      <div class="infoUno">
+        <a href="/index.html"> <img class="logo" src="/logos/logo-je.png" alt="logo-je"></a>
+      </div>
+      <div class="infoDos">
+        <h1>Solicitud de Presupuesto</h1>
+        <h2>Completa el formulario para obtener un presupuesto personalizado de acuerdo a tus requerimientos</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <form action="https://formsubmit.co/contacto.satmedia@gmail.com" method="POST" id="budgetForm">
+        <div class="grupo">
+          <div class="form-group1">
+            <label for="name">Nombre y Apellido:</label>
+            <input class="inputIzq" type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group2">
+            <label for="name">País:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+        </div>
+
+        <div class="grupo">
+          <div class="form-group1">
+            <label class="inputIzq" for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group2">
+            <label for="website">Web o Redes Sociales:</label>
+            <input type="text" id="website" name="website" required>
+          </div>
+        </div>
+
+        <div class="grupo2">
+          <div class="form-group1">
+            <label class="inputIzq" for="format">Formato a solicitar:</label>
+            <select class="lista" id="format" name="format" required>
+              <option value="">Selecciona un formato</option>
+              <option value="short_form">Short Form Content</option>
+              <option value="elearning">E-Learning</option>
+              <option value="institucional">Institucional</option>
+              <option value="promo">Promo</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group2" id="otherFormat" style="display:none;">
+            <label for="other">Especifica:</label>
+            <select class="lista" id="other" name="other">
+              <option value="miniaturas">Miniaturas de Video</option>
+              <option value="flyers">Flyers & Web Banner</option>
+              <option value="editorial">Diseño Editorial</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group3">
+          <label for="idea">Contame con detalle tu idea:</label>
+          <textarea id="idea" name="idea" placeholder="Escribe tu idea aquí..." rows="12" style="height: 150px;"
+            required></textarea>
+        </div>
+
+        <div class="form-group3">
+          <label for="references">¿Tienes referencias? Adjunta link:</label>
+          <input type="text" id="references" name="references">
+        </div>
+        <div class="form-group3 factura">
+          <label for="invoice">¿Necesitas factura?</label>
+          <input type="checkbox" id="invoice" name="invoice">
+        </div>
+        <button type="submit" id="submitBtn">SOLICITAR PRESUPUESTO</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="alert" id="successMessage" style="display:none;">
+    <img src="/logos/logo-succesful.png" alt="logo-succesful">
+    <p>¡Tu solicitud fue enviada con éxito!</p>
+    <p>En 24 hs me comunico contigo.</p>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
