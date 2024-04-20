@@ -301,7 +301,6 @@ h1 {
 
 .ventajas h5 {
     height: 20%;
-    /* margin-top: 10px; */
     color: #2c188f;
     padding: 15px;
     font-size: 110;
@@ -335,8 +334,9 @@ hr {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
-        h6 {
+        h5 {
         color: #2c188f;
+        margin: 0;
     }
 }
 
