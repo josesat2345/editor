@@ -294,12 +294,12 @@ h1 {
 }
 
 .ventajas p {
-    height: 60%;
+    height: 70%;
     font-weight: 300;
 }
 
 .ventajas h3 {
-    height: 40%;
+    height: 30%;
     margin-top: 10px;
     color: #2c188f;
     padding: 15px;
@@ -515,6 +515,7 @@ button:hover {
         padding: 5px 30px 5px 30px;
         border-radius: 5px;
         border: none;
+        margin: 10px 0 10px 0;
     }
 }
 
