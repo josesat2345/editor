@@ -300,7 +300,7 @@ h1 {
 
 .ventajas h3 {
     height: 30%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     color: #2c188f;
     padding: 15px;
     font-size: 110;
