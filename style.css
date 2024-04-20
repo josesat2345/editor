@@ -294,7 +294,7 @@ h1 {
 }
 
 .ventajas p {
-    height: 70%;
+    height: 60%;
     font-weight: 300;
 }
 
@@ -306,7 +306,6 @@ h1 {
     font-size: 110;
     display: grid;
     align-content: center;
-
 }
 
 hr {
@@ -336,7 +335,7 @@ hr {
     flex-direction: column;
     justify-content: center;
 
-    h5 {
+    h6 {
         color: #2c188f;
     }
 }
