@@ -149,7 +149,6 @@ body {
 .contenedorBis img {
     width: 120%;
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
-    /* Ajusta los valores según tus preferencias */
 }
 
 .contenedor2 {
@@ -282,6 +281,7 @@ h1 {
 
 .ventajas {
     width: 33%;
+    height: 38vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -289,24 +289,25 @@ h1 {
     border-radius: 5px;
     padding: 20px;
     margin: 20px 15px 60px 15px;
-    height: 40vh;
     align-items: center;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.50);
-
 }
 
 .ventajas p {
+    height: 60%;
     font-weight: 300;
-    margin-top: 20px;
 }
 
 .ventajas h3 {
+    height: 40%;
     margin-top: 10px;
     color: #2c188f;
     padding: 15px;
     font-size: 110;
-}
+    display: grid;
+    align-content: center;
 
+}
 
 hr {
     width: 15vw;
@@ -315,44 +316,57 @@ hr {
 
 /* MI METODOLOGÍA */
 .padreMetodologias {
-    width: 120vw;
-    height: 50vw;
+    width: 100vw;
+    height: 35vw;
     display: flex;
     flex-direction: column;
     background-color: white;
     align-items: center;
+    margin: 30px 0 30px 0;
+}
+
+.padreMetodologias h2 {
+    height: 10%;
 }
 
 .containerMetodologia {
+    display: flex;
     width: 50%;
-    height: 100%;
-    margin: 10px;
-    h5{
+    height: 70%;
+    flex-direction: column;
+    justify-content: center;
+
+    h5 {
         color: #2c188f;
     }
 }
 
-.metodologia{
-    width: 100%;
-    height: 25%;
+.doble {
     margin: 5px;
-    /* background-color: #d1d1d1; */
-    border: solid 1px #2c188f;
-    border-radius: 5px;
-    padding: 15px;
-    a{
-        text-decoration: none !important;
-    }
-    p{
-        background-color: #b1b1b1;
-    }
-
-}
-
-.doble{
+    width: 100%;
+    height: 30%;
     display: flex;
     flex-direction: row;
 }
+
+.metodologia {
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    background-color: #d1d1d1;
+    border: solid 1px #2c188f;
+    border-radius: 5px;
+    padding: 15px;
+
+    a {
+        text-decoration: none !important;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
 
 
 
@@ -473,49 +487,50 @@ button:hover {
     align-items: center;
     align-content: center;
     width: 75vw;
-    height: 50vh;
+    height: 55vh;
     margin: 10px 0 50px 0;
 }
 
 .tarjeta {
     width: 33%;
     height: 100%;
+    margin: 0 10px 0 10px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.50);
-
-    margin: 0 10px 0 10px;
     border-radius: 5px;
     justify-content: flex-start;
     align-items: center;
-    hr{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.50);
+
+    hr {
+    }
+
+    h5 {
         margin: 15px 0 0 0;
     }
-    h5{
-        margin: 15px 0 0 0;
-    }
-    button{
+
+    button {
         width: 100%;
         padding: 5px 30px 5px 30px;
         border-radius: 5px;
         border: none;
-
     }
 }
 
 .revistaGif {
     width: 100%;
+    height: 50% auto;
     border-radius: 5px 5px 0 0;
     margin: 0;
 }
 
 .tarjeta p {
     width: 90%;
-    height: 30%;
+    height: 20%;
     padding: 20px;
     margin: 0;
-    font-size: 90%;
+    font-size: 14px;
     font-weight: 300;
 }
 
@@ -530,7 +545,7 @@ button:hover {
 
 /* FORMULARIO ----------------------------*/
 .formContainer {
-    width: 65vw;
+    width: 55vw;
     height: 55vh;
     margin: 50px;
     display: flex;
@@ -541,8 +556,6 @@ button:hover {
     background-color: #004a7d;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.50);
 }
-
-
 
 .infoForm {
     width: 40%;
@@ -561,7 +574,7 @@ button:hover {
     text-align: center;
 }
 
-.infoForm p{
+.infoForm p {
     width: 80%;
     font-weight: 300;
 }
@@ -582,7 +595,7 @@ button:hover {
     width: 100%;
 }
 
-.formContainer2{
+.formContainer2 {
     width: 70%;
     height: 70%;
     display: flex;
@@ -590,7 +603,7 @@ button:hover {
     align-items: flex-start;
 }
 
-#mensaje{
+#mensaje {
     height: 40%;
     width: 100%;
     font-size: 75%;
@@ -614,7 +627,7 @@ textarea {
 }
 
 .shortInput {
-    height: 25px; 
+    height: 25px;
     width: 100%;
     margin: 0 0 15px 0;
     font-size: 75%;
