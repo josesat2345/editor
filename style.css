@@ -495,14 +495,13 @@ button:hover {
     flex-direction: row;
     align-items: center;
     align-content: center;
-    width: 75vw;
+    width: 60vw;
     height: 45vh;
     margin: 10px 0 50px 0;
 }
 
 .tarjeta {
     width: 33%;
-    height: 100%;
     margin: 0 10px 0 10px;
     display: flex;
     flex-direction: column;
@@ -511,7 +510,7 @@ button:hover {
     align-items: center;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.50);
-
+    flex-grow: 1;
     hr {}
 
     h5 {
@@ -523,7 +522,7 @@ button:hover {
         padding: 5px 30px 5px 30px;
         border-radius: 5px;
         border: none;
-        margin: 10px 0 10px 0;
+        margin: 10px 0 20px 0;
     }
 }
 
@@ -536,7 +535,6 @@ button:hover {
 
 .tarjeta p {
     width: 90%;
-    height: 20%;
     padding: 20px;
     margin: 0;
     font-size: 14px;
