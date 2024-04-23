@@ -415,7 +415,8 @@ hr {
 
 .gif1 {
     border-radius: 10px;
-    width: 11%;
+    width: 15%;
+    margin-right: 30px;
     /* height: 20%; */
     object-fit: cover;
 }
