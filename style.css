@@ -515,7 +515,10 @@ button:hover {
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.50);
     flex-grow: 1;
-    hr {}
+    hr {
+        margin-bottom: 0;
+
+    }
 
     h5 {
         margin: 15px 0 0 0;
