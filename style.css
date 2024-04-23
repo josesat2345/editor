@@ -506,7 +506,7 @@ button:hover {
 .tarjeta {
     width: 33%;
     height: 100%;
-    margin: 0 20px 0 20px;
+    margin: 0 10px 0 10px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
