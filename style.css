@@ -499,13 +499,13 @@ button:hover {
     align-items: center;
     align-content: center;
     width: 60vw;
-    height: 55vh;
+    height: 50vh;
     margin: 10px 0 50px 0;
 }
 
 .tarjeta {
     width: 33%;
-    height: auto;
+    height: 100%;
     margin: 0 10px 0 10px;
     display: flex;
     flex-direction: column;
