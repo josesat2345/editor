@@ -52,3 +52,36 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 5000); // 5000 milisegundos = 5 segundos
     });
 });
+
+
+
+
+
+
+window.onload = function() {
+    const carousel = document.querySelector('.carousel');
+    const slides = document.querySelectorAll('.slide');
+  
+    // Clona el primer slide y lo coloca al final del carrusel
+    carousel.appendChild(slides[0].cloneNode(true));
+  
+    let currentIndex = 0;
+    const slideHeight = slides[0].offsetHeight; // Cambia a offsetHeight para obtener la altura
+  
+    setInterval(() => {
+      currentIndex++;
+      carousel.style.transition = 'transform 0.5s ease-in-out';
+      carousel.style.transform = `translateY(-${currentIndex * slideHeight}px)`; // Cambia a translateY
+  
+      // Al llegar al último slide, vuelve al principio sin transición
+      if (currentIndex >= slides.length) {
+        setTimeout(() => {
+          carousel.style.transition = 'none';
+          currentIndex = 0;
+          carousel.style.transform = `translateY(0)`;
+        }, 500);
+      }
+    }, 5000); // Cambia el intervalo de acuerdo a la velocidad del carrusel
+  };
+  
+  

@@ -14,7 +14,6 @@ body {
     min-height: 100%;
     display: flex;
     background-color: #d1d1d1;
-    /* background-image: linear-gradient(to bottom, #051937, #004a7d, #0082a1, #00ba8b, #00b21e); */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -121,8 +120,6 @@ body {
     overflow-x: hidden;
     background: rgb(200, 200, 200);
     background-image: linear-gradient(45deg, rgb(33, 33, 33) 0%, transparent 73%), repeating-linear-gradient(90deg, rgba(127, 127, 127, 0.1) 0px, rgba(127, 127, 127, 0.1) 1px, transparent 1px, transparent 17px), repeating-linear-gradient(0deg, rgba(127, 127, 127, 0.1) 0px, rgba(127, 127, 127, 0.1) 1px, transparent 1px, transparent 17px), linear-gradient(0deg, rgb(33, 33, 33), rgb(33, 33, 33));
-    /* background-image: repeating-linear-gradient(137deg, rgb(32, 32, 32) 0px, rgb(32, 32, 32) 2px, rgb(33, 33, 33) 2px, rgb(33, 33, 33) 4px, rgb(34, 34, 34) 4px, rgb(34, 34, 34) 6px, rgb(33, 33, 33) 6px, rgb(33, 33, 33) 8px, rgb(36, 36, 36) 8px, rgb(36, 36, 36) 10px, rgb(35, 35, 35) 10px, rgb(35, 35, 35) 12px, rgb(33, 33, 33) 12px, rgb(33, 33, 33) 14px, rgb(32, 32, 32) 14px, rgb(32, 32, 32) 16px, rgb(36, 36, 36) 16px, rgb(36, 36, 36) 18px, rgb(34, 34, 34) 18px, rgb(34, 34, 34) 20px, rgb(35, 35, 35) 20px, rgb(35, 35, 35) 22px, rgb(35, 35, 35) 22px, rgb(35, 35, 35) 24px); */
-    /* background: linear-gradient(90deg, rgb(26, 32, 64) 0%, rgba(76, 41, 243, 1) 38%, rgba(56, 161, 255, 1) 100%); */
 }
 
 .contenedor0 {
@@ -182,7 +179,6 @@ body {
 .titulos h4 {
     background-color: #38A1FF;
     color: background-image: repeating-linear-gradient(137deg, rgb(32, 32, 32) 0px, rgb(32, 32, 32) 2px, rgb(33, 33, 33) 2px, rgb(33, 33, 33) 4px, rgb(34, 34, 34) 4px, rgb(34, 34, 34) 6px, rgb(33, 33, 33) 6px, rgb(33, 33, 33) 8px, rgb(36, 36, 36) 8px, rgb(36, 36, 36) 10px, rgb(35, 35, 35) 10px, rgb(35, 35, 35) 12px, rgb(33, 33, 33) 12px, rgb(33, 33, 33) 14px, rgb(32, 32, 32) 14px, rgb(32, 32, 32) 16px, rgb(36, 36, 36) 16px, rgb(36, 36, 36) 18px, rgb(34, 34, 34) 18px, rgb(34, 34, 34) 20px, rgb(35, 35, 35) 20px, rgb(35, 35, 35) 22px, rgb(35, 35, 35) 22px, rgb(35, 35, 35) 24px);
-
     margin: 0 0 30px 0;
     border-radius: 4px;
     padding: 1px;
@@ -692,4 +688,90 @@ textarea {
 
 .edito {
     margin-bottom: -30px;
+}
+
+
+.carousel-container {
+    overflow: hidden;
+    height: 75vh;
+    /* Altura del carrusel */
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    /* Cambia la dirección del carrusel a vertical */
+    animation: scroll 17s linear infinite;
+    /* Velocidad y repetición del carrusel */
+}
+
+.slide {
+    height: 10%;
+    /* Ajusta la altura de cada slide */
+    overflow: hidden;
+
+    img {
+        width: 50%;
+        margin: 10px;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+        /* Mueve los slides verticalmente */
+    }
+}
+
+
+
+.contenedorPasos {
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(45deg, rgb(33, 33, 33) 0%, transparent 73%), repeating-linear-gradient(90deg, rgba(127, 127, 127, 0.1) 0px, rgba(127, 127, 127, 0.1) 1px, transparent 1px, transparent 17px), repeating-linear-gradient(0deg, rgba(127, 127, 127, 0.1) 0px, rgba(127, 127, 127, 0.1) 1px, transparent 1px, transparent 17px), linear-gradient(0deg, rgb(33, 33, 33), rgb(33, 33, 33));
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+}
+
+.columnaUno {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+
+    p {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    h5 {
+        background: rgb(92, 255, 53);
+        background: linear-gradient(90deg, rgba(92, 255, 53, 1) 0%, rgba(89, 255, 195, 1) 31%, rgba(24, 230, 255, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+}
+
+.paso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.iconoPaso {
+    width: 8%;
+    margin-right: 20px;
+    border-radius: 100%;
+    background: linear-gradient(90deg, rgba(92, 255, 53, 1) 0%, rgba(89, 255, 195, 1) 31%, rgba(24, 230, 255, 1) 100%);
 }
